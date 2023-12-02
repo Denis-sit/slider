@@ -1,0 +1,244 @@
+@font-face {
+	font-family: "Nunito Sans";
+	font-style: normal;
+	font-weight: 400;
+	src: local('Nunito Sans'),
+		url("/fonts/ans-variablefont-ytlc-opsz-wdth-wght.woff") format('woff'),
+		url("/fonts/NunitoSans-VariableFont_YTLC\,opsz\,wdth\,wght.ttf") format('ttf');
+}
+
+@font-face {
+	font-family: "Yeseva One";
+	font-style: normal;
+	font-weight: 400;
+	src: local("Yeseva One"),
+		url("/fonts/yesevaone-regular.woff") format("woff"),
+		url("/fonts/YesevaOne-Regular.ttf") format("ttf");
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Nunito Sans", Arial, Helvetica, sans-serif;
+    background: #131313;
+}
+
+.container{
+    display: flex;
+    max-width: 1170px;
+    margin: auto;
+    gap: 50px;
+    padding-top: 107px;
+}
+
+.slide__information{
+    padding-top: 68px;
+}
+
+.slide__title{
+    position: relative;
+    width: 253px;
+    color: #E3B873;
+    font-family: "Yeseva One";
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 138.6%;
+    letter-spacing: -1.89px;
+    text-transform: uppercase;
+}
+
+span{
+    position: absolute;
+    width: 92px;
+    border-bottom: 1px solid #E3B873;  
+    top: 53px;
+    right: 0; 
+}
+
+.slide__text{
+    max-width: 472px;
+    color: #FFF;
+    font-family: "Nunito Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 190.96%; 
+}
+
+.slide__info_parameters{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+        "one two"
+        "three four";
+}
+
+.slide__parametrs_name{
+    color: #E3B873;
+    font-family: "Yeseva One";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 138.6%; 
+    text-transform: uppercase;
+}
+
+.slide__paeametrs_meaning{
+    color: #FFF;
+    font-family: "Nunito Sans";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 163.68%;
+}
+
+.slide__control_panel{
+    margin-top: 80px;
+}
+
+.slide__wrapper_parametrs{
+    height: 215px;
+}
+
+.slide__name_text{
+    color: rgba(255, 255, 255, 0.30);
+    font-family: "Yeseva One";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 138.6%;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.slide__name_active{
+    border-bottom: 1px solid #E3B873;
+    color: #E3B873;
+}
+
+.slide__name_text:hover{
+    color: #E3B873;
+    border-bottom: 1px solid #E3B873;
+}
+
+.slide__name{
+    display: flex;
+    gap: 61px;
+}
+
+.slide__wrapper{
+    position: relative;
+    max-width: 679px;
+    height: 482px;
+    overflow: hidden;
+    margin-top: 52px;
+}
+
+.slide__tape{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    z-index: 2;
+    transition: 1s;
+}
+
+.slide__control_panel{
+    display: flex;
+    gap: 15px;
+}
+
+.slide__prev,
+.slide__next{
+    width: 40px;
+}
+
+.arrow{
+    background: #131313;
+    width: 42px;
+    height: 19px;
+    border: none;
+    cursor: pointer;
+}
+
+.arrow__prev{
+    background: url("/image/arrowPrev.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.arrow__next{
+    background: url("/image/arrowNext.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.circle{
+    background: #131313;
+    width: 20px;
+    height: 19px;
+    border: none;
+    background: url("/image/circleNotActive.svg");
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    background-position: center;
+    cursor: pointer;
+}
+
+.circle__active{
+    background: url("/image/cirle1.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+    .container{
+        flex-direction: column-reverse;
+        align-items: center;
+        padding-top: 0;
+    }
+
+    .slide__wrapper,
+    img{
+        width: 679px;
+    }
+
+    .slide__text{
+        max-width: 679px;
+    }
+    
+    .slide__information {
+        padding-top: 0;
+    }
+
+    .slide__control_panel {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 769px) {
+    .slide__wrapper,
+    img{
+        width: 400px;
+        height: 300px;
+    }
+
+    .slide__name{
+        flex-direction: column;
+        gap: 0;
+    }
+}
+
+@media (max-width: 320px) {
+    .slide__wrapper,
+    img{
+        width: 300px;
+        height: 150px;
+        flex-shrink: 0;
+    }
+}
+
