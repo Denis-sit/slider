@@ -132,7 +132,7 @@ span{
 
 .slide__wrapper{
     position: relative;
-    max-width: 679px;
+    width: 679px;
     height: 482px;
     overflow: hidden;
     margin-top: 52px;
