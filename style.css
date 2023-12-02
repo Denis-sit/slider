@@ -3,8 +3,8 @@
 	font-style: normal;
 	font-weight: 400;
 	src: local('Nunito Sans'),
-		url("/fonts/ans-variablefont-ytlc-opsz-wdth-wght.woff") format('woff'),
-		url("/fonts/NunitoSans-VariableFont_YTLC\,opsz\,wdth\,wght.ttf") format('ttf');
+		url("fonts/ans-variablefont-ytlc-opsz-wdth-wght.woff") format('woff'),
+		url("fonts/NunitoSans-VariableFont_YTLC\,opsz\,wdth\,wght.ttf") format('ttf');
 }
 
 @font-face {
@@ -12,8 +12,8 @@
 	font-style: normal;
 	font-weight: 400;
 	src: local("Yeseva One"),
-		url("/fonts/yesevaone-regular.woff") format("woff"),
-		url("/fonts/YesevaOne-Regular.ttf") format("ttf");
+		url("fonts/yesevaone-regular.woff") format("woff"),
+		url("fonts/YesevaOne-Regular.ttf") format("ttf");
 }
 
 *{
