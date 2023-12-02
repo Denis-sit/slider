@@ -165,13 +165,13 @@ span{
 }
 
 .arrow__prev{
-    background: url("/image/arrowPrev.svg");
+    background: url("image/arrowPrev.svg");
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .arrow__next{
-    background: url("/image/arrowNext.svg");
+    background: url("image/arrowNext.svg");
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -181,7 +181,7 @@ span{
     width: 20px;
     height: 19px;
     border: none;
-    background: url("/image/circleNotActive.svg");
+    background: url("image/circleNotActive.svg");
     background-repeat: no-repeat;
     border-radius: 50%;
     background-position: center;
@@ -189,7 +189,7 @@ span{
 }
 
 .circle__active{
-    background: url("/image/cirle1.svg");
+    background: url("image/cirle1.svg");
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
